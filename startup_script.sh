@@ -7,7 +7,8 @@ sudo systemctl start mongod
 sudo systemctl enable mongod
 sudo apt update
 sudo apt install -y ruby-full ruby-bundler build-essential
-cd ~
+
+cd /home/appuser
 git clone https://github.com/Otus-DevOps-2017-11/reddit.git
-reddit && bundle install
+cd reddit && bundle install
 puma -d
